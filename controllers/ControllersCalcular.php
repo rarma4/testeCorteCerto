@@ -25,5 +25,9 @@ if (isset($_POST["divisao"])){
     $_SESSION['msg'] = "<div class='alert alert-success' role='alert'>A divisão de ".$n1." / ".$n2." é igual a <strong>".$resp."</strong></div>";
 	header('location:../calcular.php');
 }
-
+if (isset($_POST["dobrar"])){
+    $resp = $n1*2;
+    $_SESSION['msg'] = "<div class='alert alert-success' role='alert'>O Dobro de ".$n1." é igual a <strong>".$resp."</strong></div>";
+	header('location:../calcular.php');
+}
 ?>

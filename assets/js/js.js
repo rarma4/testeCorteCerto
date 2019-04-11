@@ -15,3 +15,15 @@ function validarForm() {
    }
 
 }
+function validarFormDobrar() {
+   var n1 = form.n1.value;
+
+   if (isNaN(form.n1.value) || form.n1.value == "" || form.n1.value==null){  
+      alert("Digite apenas números no primeiro campo!");  
+      form.n1.select();  
+      window.event.preventDefault()
+   }else {
+      return false;
+   }
+
+}
